@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Пародия Trello</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="header_wrapper">
+            <div class="header_left">
+                <div class="header_burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="header_icon">
+                    TRELLO
+                </div>
+                <button class="header_button">
+                    Рабочие пространства
+                </button>
+            </div>
+            <div class="header_right">
+                <div class="header_search">
+                    <textarea class="header_search__textarea" name="" id="" cols="30" rows="1" placeholder="Поиск"></textarea>
+                </div>
+                <div class="header_help">
+                    ?
+                </div>
+                <div class="header_profile">
+                    <img src="img/avatar.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main_wrapper">
+            <div class="aside">
+                <div class="aside_table">
+                    <div class="aside_table__left">
+                        <div class="aside_table_image">
+                            <img src="img/avatar.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="aside_table__right">
+                        <div class="aside_table_name">
+                            Жизнь
+                        </div>
+                        <div class="aside_table_free">
+                            Бесплатно
+                        </div>
+                    </div>
+                </div>
+                <div class="aside_main">
+                    <div class="aside_tables">
+                        <div class="aside_icon">
+                            <img class="aside_icon__img" src="img/icon.png" alt="">
+                        </div>
+                        <p>Доски</p>
+
+                    </div>
+
+                    <div class="aside_users">
+                        <div class="aside_icon">
+                            <img class="aside_icon__img" src="img/icon.png" alt="">
+                        </div>
+                        <p>Доски</p>
+                    </div>
+                    <div class="aside_seting">
+                        <div class="aside_icon">
+                            <img class="aside_icon__img" src="img/icon.png" alt="">
+                        </div>
+                        <p>Доски</p>
+                    </div>
+                </div>
+                <div class="aside_footer">
+                    <button>
+                        Купить подписку
+                    </button>
+                </div>
+            </div>
+            <div class="main">
+                <div class="main_header_wrapper">
+                    <div class="main_header">
+                        <div class="main_header__left">
+                            <div class="main_name">
+                                Жизнь
+                            </div>
+                            <div class="main_button">
+                                <button>
+                                    Для рабочего пространства
+                                </button>
+
+                            </div>
+                        </div>
+                        <div class="main_header__right">
+
+                            <div class="main_button">
+                                <button>
+                                    Фильтр
+                                </button>
+                            </div>
+                            <div class="main_icon">
+                                <img src="img/avatar.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main_content"> 
+                            <div class="main_columns">
+                                <div class="add_column-wrapper" id="addColumnWrapper">
+                                    <div class="modalSetting">
+                                        <!-- <div class="modalSetting-wrapper">
+                                            <div class="modalSetting-up">
+                                                <div class="modalSetting-up-wrapper">
+                                                    <div class="modalSetting-description">Действия со списоком</div>
+                                                    <div class="modalSetting-close">✖</div>
+                                                 </div>
+                                            </div>
+                                            <div class="modalSetting-share modalSetting-button">Поделиться</div>
+                                            <div class="modalSetting-delete modalSetting-button">Удалить</div>
+                                            <div class="modalSetting-addTask modalSetting-button">Добавить карточку</div>
+                                        </div> -->
+                                    </div>
+                                    <div class="columns">
+                                        
+                                        <!-- <div class="column" id="${item.id}">
+                                            <div class="column_up">
+                                                <div class="column_name" id="${item.id}">${item.name}</div>
+                                                <div class="column_seting"></div>
+                                            </div>
+                                            <div class="tasks">
+                                                <div class="task">
+                                                    <span class="task_text">Тест названия</span>
+                                                    <button class="task_button">Кнопка</button>
+                                                </div>
+                                                <div class="task">
+                                                    <span class="task_text">Тест названия</span>
+                                                    <button class="task_button">Кнопка</button>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="column_down">
+                                                <button class="column_button " id="${item.id}">+ Добавить карточку</button>
+                                                <div class="column_sample">
+                                                    <img src="img/sample_icon.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                    <div class="add-columns-btn">
+                                        <div class="add_column">+ Добавить список</div>
+                                    </div>
+
+                                    <!-- <div id="myModal" class="modal">
+                                        <div class="modal-content">
+                                          <span class="close">&times;</span>
+                                          <h2>Модальное окно</h2>
+                                          <p>Текст модального окна...</p>
+                                        </div>
+                                    </div> -->
+                                <!-- </div>
+                                    <div class="add_column-option">
+                                        <textarea wrap="off" name="" id="" cols="20" rows="1" class="name_column" placeholder="Введите заголовок списка"></textarea>
+                                        <div class="column-option__down">
+                                            <button class="add_column-button">Добавить список</button>
+                                            <div class="close_button">✖</div>
+                                        </div>
+                                    </div>
+                                </div> -->
+            
+                                <!-- <div class="column">
+                                    <div class="column_up">
+                                        <div class="column_name">Школа</div>
+                                        <div class="column_seting">
+                                        
+                                        </div>
+                                    </div>
+                                    <div class="column_down">
+                                        <button class="column_button">+ Добавить карточку</button>
+                                        <div class="column_sample">
+                                            <img src="img/sample_icon.png" alt="">
+                                        </div>
+                                    </div>
+                                </div> -->
+            
+                                <!-- <div class="column" id="${item.id}">
+                                    <div class="column_up">
+                                        <textarea name="" id="" cols="20" rows="1" class="name_column-edit"></textarea>
+                                        <div class="column_seting"></div>
+                                    </div>
+                                    <div class="column_down">
+                                        <button class="column_button">+ Добавить карточку</button>
+                                        <div class="column_sample">
+                                            <img src="img/sample_icon.png" alt="">
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                    </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+    </main>
+    <script type="module" src="js/main.js"></script>
+  
+</body>
+
+</html>
